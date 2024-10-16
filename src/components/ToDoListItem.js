@@ -5,7 +5,7 @@ const LiContainer = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 540px;
+  width: 80%;
   margin: 0 auto;
 `;
 const LiContent = styled.div`
