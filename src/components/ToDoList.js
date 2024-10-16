@@ -3,8 +3,7 @@ import ToDoListItem from './ToDoListItem';
 import styled from 'styled-components';
 
 const ListContainer = styled.div`
-  margin: 30px 115px;
-
+  //   margin: 30px 115px;
   margin: 0;
 `;
 
