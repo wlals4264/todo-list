@@ -1,5 +1,16 @@
 import React from 'react';
 import ToDoListItem from './ToDoListItem';
+import styled from 'styled-components';
+
+const ListContainer = styled.div`
+  margin: 30px 115px;
+
+  margin: 0;
+`;
+
+const Ul = styled.ul`
+  list-style: none;
+`;
 
 export default function ToDoList() {
   const datas = [
@@ -21,10 +32,12 @@ export default function ToDoList() {
   ];
 
   return (
-    <ul>
-      {datas.map((data) => (
-        <ToDoListItem key={data.id} id={data.id} text={data.text} isChecked={data.isChecked} />
-      ))}
-    </ul>
+    <ListContainer>
+      <Ul>
+        {datas.map((data) => (
+          <ToDoListItem key={data.id} id={data.id} text={data.text} isChecked={data.isChecked} />
+        ))}
+      </Ul>
+    </ListContainer>
   );
 }

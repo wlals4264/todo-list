@@ -1,14 +1,23 @@
 import React from 'react';
 import ToDoForm from './ToDoForm';
 import ToDoList from './ToDoList';
+import styled from 'styled-components';
 
+const Header = styled.header`
+  width: 80vw;
+`;
+const Title = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 export default function ToDoContainer() {
   return (
     <>
-      <div style={{ width: '80vw' }}>
-        <h1 style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>TODO LIST</h1>
+      <Header>
+        <Title>TODO LIST</Title>
         <ToDoForm />
-      </div>
+      </Header>
       <div>
         <ToDoList />
       </div>
