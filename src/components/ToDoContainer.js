@@ -3,9 +3,15 @@ import ToDoForm from './ToDoForm';
 import ToDoList from './ToDoList';
 import styled from 'styled-components';
 
-const Header = styled.header`
+const Container = styled.div`
+  margin: 0 auto;
   width: 80vw;
 `;
+
+const Header = styled.div``;
+
+const Body = styled.div``;
+
 const Title = styled.h1`
   display: flex;
   justify-content: center;
@@ -13,14 +19,14 @@ const Title = styled.h1`
 `;
 export default function ToDoContainer() {
   return (
-    <>
+    <Container>
       <Header>
         <Title>TODO LIST</Title>
         <ToDoForm />
       </Header>
-      <div>
+      <Body>
         <ToDoList />
-      </div>
-    </>
+      </Body>
+    </Container>
   );
 }

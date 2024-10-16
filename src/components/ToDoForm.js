@@ -47,11 +47,11 @@ const SearchIcon = styled.svg`
   position: relative;
   left: -30px;
   z-index: 1;
-  width: 15px; /* 아이콘의 크기를 설정 */
+  width: 15px;
 `;
 
 const AddIcon = styled.svg`
-  width: 15px; /* 아이콘의 크기를 설정 */
+  width: 15px;
 `;
 
 export default function ToDoForm() {
