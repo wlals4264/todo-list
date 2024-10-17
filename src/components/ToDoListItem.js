@@ -9,7 +9,6 @@ const LiContainer = styled.li`
   margin: 0 auto;
 `;
 const LiContent = styled.div`
-  /* li 대신 div 사용 */
   margin: 17px 0;
   display: flex;
   align-items: center;
@@ -20,12 +19,16 @@ const Input = styled.input`
 `;
 
 const CheckBox = styled.div`
-  width: 26px;
-  height: 26px;
+  width: 1.4rem;
+  height: 1.4rem;
   border: 1px solid #6c63ff;
   background-color: ${({ checked }) => (checked ? '#6c63ff' : 'transparent')}; /* 체크된 경우 색상 */
   margin-right: 10px;
   position: relative;
+`;
+
+const Text = styled.span`
+  font-size: 0.8rem;
 `;
 
 const CheckMark = () => (
@@ -51,7 +54,7 @@ export default function ToDoListItem({ id, text, isChecked }) {
         <CheckBox checked={isChecked}>
           {isChecked && <CheckMark />} {/* 체크되었을 때 SVG 표시 */}
         </CheckBox>
-        <span>{text}</span>
+        <Text>{text}</Text>
       </LiContent>
       <OptionBox>
         <OptionBoxSVG width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
